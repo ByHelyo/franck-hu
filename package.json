@@ -22,5 +22,8 @@
 		"svelte-preprocess": "^4.10.7",
 		"vite": "^3.1.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"normalize.css": "^8.0.1"
+	}
 }
