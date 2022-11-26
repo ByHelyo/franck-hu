@@ -5,15 +5,17 @@
 	let open = false;
 </script>
 
-<nav>
-	<div>
-		<h1>Franck Hu</h1>
+<header>
+	<nav>
+		<div>
+			<h1>Franck Hu</h1>
 
-		<Buttons bind:open />
-	</div>
+			<Buttons bind:open />
+		</div>
 
-	<Menu bind:open />
-</nav>
+		<Menu bind:open />
+	</nav>
+</header>
 
 <style>
 	nav {

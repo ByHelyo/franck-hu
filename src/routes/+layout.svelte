@@ -1,7 +1,7 @@
 <script>
 	import '/node_modules/normalize.css/normalize.css';
 	import Header from '$lib/components/header/Header.svelte';
-	import '$lib/styles/app.scss';
+	import '../app.scss';
 	import '$lib/styles/reset.css';
 </script>
 

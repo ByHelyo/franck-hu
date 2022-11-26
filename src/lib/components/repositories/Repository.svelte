@@ -21,11 +21,12 @@
 	@import 'variables.scss';
 
 	a {
-		height: 150px;
-		padding: 16px;
+		height: 180px;
+		padding-inline: 16px;
 
 		display: flex;
 		flex-direction: column;
+		justify-content: space-between;
 		border-radius: 6px;
 		background-color: $color-light-background-2;
 		border: 2px solid $color-light-background-2-border;
