@@ -5,10 +5,6 @@
 	import '$lib/styles/reset.css';
 </script>
 
-<svelte:head>
-	<title>Franck Hu</title>
-</svelte:head>
-
 <Header />
 
 <main>

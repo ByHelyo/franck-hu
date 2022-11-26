@@ -4,4 +4,8 @@
 	export let data;
 </script>
 
+<svelte:head>
+	<title>Franck Hu | Repositories</title>
+</svelte:head>
+
 <Repositories repos={data.repositories} />

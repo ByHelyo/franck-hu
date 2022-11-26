@@ -48,4 +48,18 @@
 	a:focus {
 		background-color: $color-light-background-2-focus;
 	}
+
+	/* Fade */
+
+	a {
+		vertical-align: middle;
+		-webkit-transform: perspective(1px) translateZ(0);
+		transform: perspective(1px) translateZ(0);
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+		overflow: hidden;
+		-webkit-transition-duration: 0.3s;
+		transition-duration: 0.3s;
+		-webkit-transition-property: color, background-color;
+		transition-property: color, background-color;
+	}
 </style>
