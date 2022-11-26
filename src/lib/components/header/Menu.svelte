@@ -5,8 +5,14 @@
 	export let open;
 
 	let links = [
-		['Home', '/'],
-		['Repositories', '/repositories']
+		{
+			name: 'Home',
+			href: '/'
+		},
+		{
+			name: 'Repositories',
+			href: '/repositories'
+		}
 	];
 </script>
 
@@ -14,7 +20,7 @@
 	<ul>
 		{#each links as link, i}
 			<li transition:fly={{ y: -15, delay: 50 * i }}>
-				<a href={link[1]} on:click={() => (open = !open)}>{link[0]}</a>
+				<a href={link.href} on:click={() => (open = !open)}>{link.name}</a>
 			</li>
 		{/each}
 	</ul>

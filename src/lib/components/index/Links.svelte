@@ -2,16 +2,28 @@
 	import AnchorImg from '$lib/components/utils/AnchorImg.svelte';
 
 	let links = [
-		['https://github.com/ByHelyo', 'misc/github.svg'],
-		['mailto:byfranckhu@gmail.com', 'misc/mail.svg'],
-		['https://www.linkedin.com/in/franck-hu', 'misc/linkedin.svg']
+		{
+			name: 'GitHub',
+			href: 'https://github.com/ByHelyo',
+			src: 'misc/github.svg'
+		},
+		{
+			name: 'Mail',
+			href: 'mailto:byfranckhu@gmail.com',
+			src: 'misc/mail.svg'
+		},
+		{
+			name: 'LinkedIn',
+			href: 'https://www.linkedin.com/in/franck-hu',
+			src: 'misc/linkedin.svg'
+		}
 	];
 </script>
 
 <ul>
 	{#each links as link}
 		<li>
-			<AnchorImg href={link[0]} src={link[1]} />
+			<AnchorImg href={link.href} src={link.src} />
 		</li>
 	{/each}
 </ul>
