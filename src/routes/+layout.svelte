@@ -11,8 +11,15 @@
 	<slot />
 </main>
 
-<style>
+<style lang="scss">
+	@import 'variables.scss';
+
 	main {
 		padding-top: 256px;
+	}
+
+	:global(body.dark-theme) {
+		background-color: $color-dark-background-1;
+		color: $color-dark-foreground-1;
 	}
 </style>

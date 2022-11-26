@@ -26,9 +26,22 @@
 		background-color: $color-light-background-2-focus;
 	}
 
+	:global(body.dark-theme) button:hover {
+		background-color: $color-dark-background-2-hover;
+	}
+
+	:global(body.dark-theme) button:focus {
+		background-color: $color-dark-background-2-focus;
+	}
+
 	img {
 		width: 40px;
 		height: 40px;
+	}
+
+	:global(body.dark-theme) img {
+		filter: invert(100%) sepia(0%) saturate(7488%) hue-rotate(353deg) brightness(100%)
+			contrast(107%);
 	}
 
 	/* Grow */

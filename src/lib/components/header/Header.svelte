@@ -18,7 +18,7 @@
 </header>
 
 <style>
-	nav {
+	header {
 		left: 0;
 		right: 0;
 		padding-inline: 16px;

@@ -49,6 +49,14 @@
 		background-color: $color-light-background-2-focus;
 	}
 
+	:global(body.dark-theme) a:hover {
+		background-color: $color-dark-background-2-hover;
+	}
+
+	:global(body.dark-theme) a:focus {
+		background-color: $color-dark-background-2-focus;
+	}
+
 	/* Fade */
 
 	a {

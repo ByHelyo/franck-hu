@@ -40,6 +40,19 @@
 		background-color: $color-light-background-2-focus;
 	}
 
+	:global(body.dark-theme) a {
+		background-color: $color-dark-background-2;
+		border-color: $color-dark-background-2-border;
+	}
+
+	:global(body.dark-theme) a:hover {
+		background-color: $color-dark-background-2-hover;
+	}
+
+	:global(body.dark-theme) a:focus {
+		background-color: $color-dark-background-2-focus;
+	}
+
 	img {
 		top: 2px;
 		width: 16px;
