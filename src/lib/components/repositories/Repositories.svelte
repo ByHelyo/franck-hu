@@ -14,6 +14,7 @@
 				description={repo.description}
 				stars={repo.stargazers_count}
 				url={repo.html_url}
+				language={repo.language}
 			/>
 		{/each}
 	</div>

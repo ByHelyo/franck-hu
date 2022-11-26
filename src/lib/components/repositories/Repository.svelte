@@ -6,6 +6,8 @@
 	export let stars;
 
 	export let url;
+
+	export let language;
 </script>
 
 <a href={url}>
@@ -14,7 +16,21 @@
 		<p>{description}</p>
 	</div>
 
-	<p><img src="misc/star.svg" alt="" />{stars}</p>
+	<div class="details">
+		<p>
+			<img src="misc/star.svg" alt="" />{stars}
+		</p>
+
+		{#if language === 'Rust'}
+			<p>
+				<img src="logos/rust.svg" alt="" />{language}
+			</p>
+		{:else if language === 'C'}
+			<p>
+				<img src="logos/c.svg" alt="" />{language}
+			</p>
+		{/if}
+	</div>
 </a>
 
 <style lang="scss">
@@ -60,6 +76,11 @@
 		margin-inline-end: 8px;
 
 		position: relative;
+	}
+
+	div.details {
+		display: flex;
+		gap: 32px;
 	}
 
 	/* Fade */
