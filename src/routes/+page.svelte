@@ -9,9 +9,7 @@
 
 <img src="misc/logo.jpg" alt="" />
 
-<div>
-	<Title />
-</div>
+<Title />
 
 <Links />
 
@@ -24,9 +22,5 @@
 		display: block;
 		border: 2px solid #ffffff;
 		border-radius: 50%;
-	}
-
-	div {
-		text-align: center;
 	}
 </style>

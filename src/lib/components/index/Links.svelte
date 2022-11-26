@@ -23,7 +23,7 @@
 <ul>
 	{#each links as link}
 		<li>
-			<AnchorImg href={link.href} src={link.src} />
+			<AnchorImg href={link.href} src={link.src} name={link.name} />
 		</li>
 	{/each}
 </ul>
@@ -35,5 +35,6 @@
 		list-style: none;
 		display: flex;
 		justify-content: center;
+		gap: 8px;
 	}
 </style>
