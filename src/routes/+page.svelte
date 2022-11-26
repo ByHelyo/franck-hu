@@ -1,4 +1,5 @@
 <script>
+	import Title from '$lib/components/index/Title.svelte';
 	import Links from '$lib/components/index/Links.svelte';
 </script>
 
@@ -9,7 +10,7 @@
 <img src="misc/logo.jpg" alt="" />
 
 <div>
-	<h1>Franck Hu 👋</h1>
+	<Title />
 </div>
 
 <Links />
@@ -27,10 +28,5 @@
 
 	div {
 		text-align: center;
-	}
-
-	h1 {
-		text-shadow: 0 3px 0 #b2a98f, 0 14px 10px rgba(0, 0, 0, 0.15), 0 24px 2px rgba(0, 0, 0, 0.1),
-			0 34px 30px rgba(0, 0, 0, 0.1);
 	}
 </style>
