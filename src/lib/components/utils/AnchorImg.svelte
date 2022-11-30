@@ -40,8 +40,8 @@
 	}
 
 	img {
-		width: 44px;
-		height: 44px;
+		width: 40px;
+		height: 40px;
 	}
 
 	:global(body.dark-theme) img {
