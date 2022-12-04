@@ -6,7 +6,7 @@
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
-		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+		"lint": "prettier --plugin-search-dir . --check . && eslint . --max-warnings=0",
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
