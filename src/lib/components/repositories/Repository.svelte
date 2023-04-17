@@ -1,4 +1,6 @@
 <script>
+	let hovered = false;
+
 	export let name;
 
 	export let description;
@@ -10,7 +12,16 @@
 	export let language;
 </script>
 
-<a href={url}>
+<a
+	href={url}
+	class:hovered
+	on:mouseenter={() => {
+		hovered = true;
+	}}
+	on:mouseleave={() => {
+		hovered = false;
+	}}
+>
 	<div>
 		<h2>{name}</h2>
 		<p>{description}</p>
@@ -85,7 +96,7 @@
 
 	/* Fade */
 
-	a {
+	a.active {
 		vertical-align: middle;
 		-webkit-transform: perspective(1px) translateZ(0);
 		transform: perspective(1px) translateZ(0);
