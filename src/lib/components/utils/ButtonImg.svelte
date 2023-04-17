@@ -1,9 +1,11 @@
 <script>
 	export let src;
+
+	export let dark = true;
 </script>
 
 <button on:click>
-	<img {src} alt="" />
+	<img class:dark {src} alt="" />
 </button>
 
 <style lang="scss">
@@ -39,7 +41,7 @@
 		height: 40px;
 	}
 
-	:global(body.dark-theme) img {
+	:global(body.dark-theme) img.dark {
 		filter: invert(100%) sepia(0%) saturate(7488%) hue-rotate(353deg) brightness(100%)
 			contrast(107%);
 	}
