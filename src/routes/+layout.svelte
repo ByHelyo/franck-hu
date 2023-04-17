@@ -19,7 +19,7 @@
 	}
 
 	:global(body.dark-theme) {
-		background-color: $color-dark-background-1;
-		color: $color-dark-foreground-1;
+		background-color: $dark-background;
+		color: $dark-foreground;
 	}
 </style>

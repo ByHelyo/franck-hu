@@ -48,19 +48,19 @@
 	}
 
 	a:hover {
-		background-color: $color-light-background-2-hover;
+		background-color: $light-background-primary-hover;
 	}
 
 	a:focus {
-		background-color: $color-light-background-2-focus;
+		background-color: $light-background-primary-focus;
 	}
 
 	:global(body.dark-theme) a:hover {
-		background-color: $color-dark-background-2-hover;
+		background-color: $dark-background-primary-hover;
 	}
 
 	:global(body.dark-theme) a:focus {
-		background-color: $color-dark-background-2-focus;
+		background-color: $dark-background-primary-focus;
 	}
 
 	/* Fade */

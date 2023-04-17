@@ -55,29 +55,29 @@
 		flex-direction: column;
 		justify-content: space-between;
 		border-radius: 6px;
-		background-color: $color-light-background-2;
-		border: 2px solid $color-light-background-2-border;
+		background-color: $light-background-primary;
+		border: 2px solid $light-background-primary-border;
 	}
 
 	a:hover {
-		background-color: $color-light-background-2-hover;
+		background-color: $light-background-primary-hover;
 	}
 
 	a:focus {
-		background-color: $color-light-background-2-focus;
+		background-color: $light-background-primary-focus;
 	}
 
 	:global(body.dark-theme) a {
-		background-color: $color-dark-background-2;
-		border-color: $color-dark-background-2-border;
+		background-color: $dark-background-primary;
+		border-color: $dark-background-primary-border;
 	}
 
 	:global(body.dark-theme) a:hover {
-		background-color: $color-dark-background-2-hover;
+		background-color: $dark-background-primary-hover;
 	}
 
 	:global(body.dark-theme) a:focus {
-		background-color: $color-dark-background-2-focus;
+		background-color: $dark-background-primary-focus;
 	}
 
 	img {
@@ -96,7 +96,7 @@
 
 	/* Fade */
 
-	a.active {
+	a.hovered {
 		vertical-align: middle;
 		-webkit-transform: perspective(1px) translateZ(0);
 		transform: perspective(1px) translateZ(0);

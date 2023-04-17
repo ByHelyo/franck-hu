@@ -24,19 +24,19 @@
 	}
 
 	a:hover {
-		background-color: $color-light-background-2-hover;
+		background-color: $light-background-primary-hover;
 	}
 
 	a:focus {
-		background-color: $color-light-background-2-focus;
+		background-color: $light-background-primary-focus;
 	}
 
 	:global(body.dark-theme) a:hover {
-		background-color: $color-dark-background-2-hover;
+		background-color: $dark-background-primary-hover;
 	}
 
 	:global(body.dark-theme) a:focus {
-		background-color: $color-dark-background-2-focus;
+		background-color: $dark-background-primary-focus;
 	}
 
 	img {
@@ -62,7 +62,7 @@
 		position: absolute;
 		display: none;
 		content: '';
-		border-block-start-color: rgba($color-light-background-2-active, 0.8);
+		border-block-start-color: rgba($light-background-tooltip, 0.8);
 		border-block-end-width: 0;
 	}
 
@@ -75,8 +75,8 @@
 
 		position: absolute;
 		display: none;
-		background-color: rgba($color-light-background-2-active, 0.8);
-		color: $color-light-foreground-2-active;
+		background-color: rgba($light-background-tooltip, 0.8);
+		color: $light-foreground-tooltip;
 		content: attr(title);
 		border-radius: 20px;
 		border-block-end: 0;
@@ -88,12 +88,12 @@
 	}
 
 	:global(body.dark-theme) a::before {
-		color: $color-dark-foreground-2-active;
-		background-color: rgba($color-dark-background-2-active, 0.8);
+		color: $dark-foreground-tooltip;
+		background-color: rgba($dark-background-tooltip, 0.8);
 	}
 
 	:global(body.dark-theme) a::after {
-		border-block-start-color: rgba($color-dark-background-2-active, 0.8);
+		border-block-start-color: rgba($dark-background-tooltip, 0.8);
 	}
 
 	/* Grow */
