@@ -22,5 +22,19 @@
 		<ButtonImg src="misc/moon.svg" on:click={handleThemeButton} dark={false} />
 	{/if}
 
-	<ButtonImg src="/misc/menu.svg" on:click={() => (open = !open)} />
+	{#if open}
+		<ButtonImg
+			src="/misc/close.svg"
+			on:click={() => {
+				open = !open;
+			}}
+		/>
+	{:else}
+		<ButtonImg
+			src="/misc/menu.svg"
+			on:click={() => {
+				open = !open;
+			}}
+		/>
+	{/if}
 </div>
