@@ -35,6 +35,6 @@
 		list-style: none;
 		display: flex;
 		justify-content: center;
-		gap: 8px;
+		gap: 16px;
 	}
 </style>

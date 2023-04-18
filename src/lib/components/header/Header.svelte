@@ -23,6 +23,7 @@
 		left: 0;
 		right: 0;
 		padding-inline: 16px;
+		padding-block: 8px;
 
 		position: absolute;
 	}
