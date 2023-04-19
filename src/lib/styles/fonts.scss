@@ -8,3 +8,10 @@
 	src: url('/fonts/Raleway-Bold.ttf') format('truetype');
 	font-weight: bold;
 }
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('/fonts/Raleway-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
