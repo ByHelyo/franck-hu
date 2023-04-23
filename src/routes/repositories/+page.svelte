@@ -8,4 +8,12 @@
 	<title>Franck Hu | Repositories</title>
 </svelte:head>
 
-<Repositories repos={data.repositories} />
+<main>
+	<Repositories repos={data.repositories} />
+</main>
+
+<style>
+	main {
+		padding-top: 256px;
+	}
+</style>

@@ -7,16 +7,22 @@
 	<title>Franck Hu | Home</title>
 </svelte:head>
 
-<img src="misc/logo.jpg" alt="" />
+<main>
+	<img src="me.jpg" alt="" />
 
-<Title />
+	<Title />
 
-<Links />
+	<Links />
+</main>
 
 <style>
+	main {
+		padding-top: 320px;
+	}
+
 	img {
-		width: 300px;
-		height: 300px;
+		width: 200px;
+		height: 200px;
 
 		margin: auto;
 		display: block;

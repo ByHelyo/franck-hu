@@ -7,16 +7,10 @@
 
 <Header />
 
-<main>
-	<slot />
-</main>
+<slot />
 
 <style lang="scss">
 	@import 'variables.scss';
-
-	main {
-		padding-top: 256px;
-	}
 
 	:global(body.dark-theme) {
 		background-color: $dark-background;
