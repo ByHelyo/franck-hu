@@ -1,7 +1,17 @@
 {
 	"name": "franck-hu",
-	"version": "0.0.1",
+	"author": "Franck Hu",
 	"private": false,
+	"version": "0.0.1",
+	"description": "My website",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ByHelyo/franck-hu"
+	},
+	"bugs": {
+		"url": "https://github.com/ByHelyo/franck-hu/issues"
+	},
+	"homepage": "https://github.com/ByHelyo/franck-hu#readme",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
