@@ -5,17 +5,17 @@
 		{
 			name: 'GitHub',
 			href: 'https://github.com/ByHelyo',
-			src: 'misc/github.svg'
+			src: 'logos/github.svg'
 		},
 		{
 			name: 'Mail',
 			href: 'mailto:byfranckhu@gmail.com',
-			src: 'misc/mail.svg'
+			src: 'logos/mail.svg'
 		},
 		{
 			name: 'LinkedIn',
 			href: 'https://www.linkedin.com/in/franck-hu',
-			src: 'misc/linkedin.svg'
+			src: 'logos/linkedin.svg'
 		}
 	];
 </script>
