@@ -19,7 +19,7 @@
 	{#if $theme === 'light'}
 		<ButtonImg src="misc/sun.svg" on:click={handleThemeButton} />
 	{:else if $theme === 'dark'}
-		<ButtonImg src="misc/moon.svg" on:click={handleThemeButton} dark={false} />
+		<ButtonImg src="misc/moon.svg" on:click={handleThemeButton} />
 	{/if}
 
 	{#if open}
