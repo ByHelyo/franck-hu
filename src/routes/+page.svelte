@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Title from '$lib/components/index/Title.svelte';
-	import Links from '$lib/components/index/Links.svelte';
+	import Title from '$lib/components/home/Title.svelte';
+	import Links from '$lib/components/home/Links.svelte';
 </script>
 
 <svelte:head>

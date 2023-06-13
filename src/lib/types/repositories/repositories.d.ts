@@ -1,4 +1,4 @@
-export namespace repositories {
+export namespace Repositories {
 	export interface Repository {
 		name: string;
 		description: string;

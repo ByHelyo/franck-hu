@@ -1,8 +1,8 @@
 <script lang="ts">
 	import AnchorImg from '$lib/components/utils/AnchorImg.svelte';
-	import type { index } from '$lib/types/index/Links';
+	import type { Home } from '$lib/types/home/Links';
 
-	let links: index.LinkSocial[] = [
+	let links: Home.LinkSocial[] = [
 		{
 			name: 'GitHub',
 			href: 'https://github.com/ByHelyo',

@@ -1,11 +1,11 @@
 <script lang="ts">
 	import { fly, scale } from 'svelte/transition';
 	import { quadOut } from 'svelte/easing';
-	import type { header } from '$lib/types/header/Menu';
+	import type { Header } from '$lib/types/header/Menu';
 
 	export let open: boolean;
 
-	let links: header.LinkNavigation[] = [
+	let links: Header.LinkNavigation[] = [
 		{
 			name: 'Home',
 			href: '/'
