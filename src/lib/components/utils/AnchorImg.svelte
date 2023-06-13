@@ -1,9 +1,9 @@
-<script>
-	export let name;
+<script lang="ts">
+	export let name: string;
 
-	export let href;
+	export let href: string;
 
-	export let src;
+	export let src: string;
 </script>
 
 <a {href} title={name}>

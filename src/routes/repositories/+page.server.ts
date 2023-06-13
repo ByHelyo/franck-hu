@@ -1,5 +1,4 @@
 import { API_KEY } from '$env/static/private';
-
 export async function load() {
 	const res = await fetch('https://api.github.com/user/repos', {
 		method: 'GET',
@@ -9,7 +8,7 @@ export async function load() {
 		}
 	});
 
-	let data = await res.json();
+	const data = await res.json();
 
 	return {
 		repositories: data

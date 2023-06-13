@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
 	import { theme } from '$lib/stores/theme.js';
 	import ButtonImg from '$lib/components/utils/ButtonImg.svelte';
 
-	export let open;
+	export let open: boolean;
 
 	function handleThemeButton() {
 		if ($theme === 'light') {

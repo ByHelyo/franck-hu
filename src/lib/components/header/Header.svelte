@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Title from '$lib/components/header/Title.svelte';
 	import Buttons from '$lib/components/header/Buttons.svelte';
 	import Menu from '$lib/components/header/Menu.svelte';

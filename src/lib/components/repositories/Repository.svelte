@@ -1,15 +1,15 @@
-<script>
+<script lang="ts">
 	let hovered = false;
 
-	export let name;
+	export let name: string;
 
-	export let description;
+	export let description: string;
 
-	export let stars;
+	export let stars: number;
 
-	export let url;
+	export let url: string;
 
-	export let language;
+	export let language: string;
 </script>
 
 <a

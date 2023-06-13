@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import '/node_modules/normalize.css/normalize.css';
 	import Header from '$lib/components/header/Header.svelte';
 	import '../app.scss';
