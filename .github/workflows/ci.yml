@@ -62,3 +62,5 @@ jobs:
 
       - name: 'Run check'
         run: pnpm run check
+        env:
+          API_KEY: api_key
