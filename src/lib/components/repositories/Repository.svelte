@@ -1,4 +1,6 @@
 <script lang="ts">
+	const supportedLanguages = ['c', 'rust', 'nix'];
+
 	let hovered = false;
 
 	export let name: string;
@@ -10,6 +12,10 @@
 	export let url: string;
 
 	export let language: string;
+
+	function buildLanguagePath(language: string) {
+		return `logos/${language.toLowerCase()}.svg`;
+	}
 </script>
 
 <a
@@ -32,13 +38,9 @@
 			<img src="misc/star.svg" alt="" />{stars}
 		</p>
 
-		{#if language === 'Rust'}
+		{#if language != null && supportedLanguages.includes(language.toLowerCase())}
 			<p>
-				<img src="logos/rust.svg" alt="" />{language}
-			</p>
-		{:else if language === 'C'}
-			<p>
-				<img src="logos/c.svg" alt="" />{language}
+				<img src={buildLanguagePath(language)} alt="" />{language}
 			</p>
 		{/if}
 	</div>
