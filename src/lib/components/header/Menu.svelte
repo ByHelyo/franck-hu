@@ -46,27 +46,16 @@
 		font-size: 24px;
 		letter-spacing: 2px;
 		border-radius: 6px;
-	}
 
-	a:hover {
-		background-color: $light-background-primary-hover;
-	}
+		&:hover {
+			background-color: $light-background-primary-hover;
+		}
 
-	a:focus {
-		background-color: $light-background-primary-focus;
-	}
+		&:focus {
+			background-color: $light-background-primary-focus;
+		}
 
-	:global(body.dark-theme) a:hover {
-		background-color: $dark-background-primary-hover;
-	}
-
-	:global(body.dark-theme) a:focus {
-		background-color: $dark-background-primary-focus;
-	}
-
-	/* Fade */
-
-	a {
+		/* Fade */
 		vertical-align: middle;
 		-webkit-transform: perspective(1px) translateZ(0);
 		transform: perspective(1px) translateZ(0);
@@ -76,5 +65,17 @@
 		transition-duration: 0.3s;
 		-webkit-transition-property: color, background-color;
 		transition-property: color, background-color;
+	}
+
+	:global(body.dark-theme) {
+		a {
+			&:hover {
+				background-color: $dark-background-primary-hover;
+			}
+		}
+
+		a:focus {
+			background-color: $dark-background-primary-focus;
+		}
 	}
 </style>
