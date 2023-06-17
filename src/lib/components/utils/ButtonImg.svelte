@@ -18,37 +18,33 @@
 		border-radius: 6px;
 		cursor: pointer;
 		border: none;
-	}
 
-	button:hover {
-		background-color: $light-background-primary-hover;
-	}
+		&:hover {
+			background-color: $light-background-primary-hover;
+		}
 
-	button:focus {
-		background-color: $light-background-primary-focus;
-	}
+		&:focus {
+			background-color: $light-background-primary-focus;
+		}
 
-	:global(body.dark-theme) button:hover {
-		background-color: $dark-background-primary-hover;
-	}
+		/* Grow */
 
-	:global(body.dark-theme) button:focus {
-		background-color: $dark-background-primary-focus;
+		&:hover > img,
+		&:focus > img,
+		&:active > img {
+			-webkit-transform: scale(1.1);
+			transform: scale(1.1);
+		}
+
+		/* ! Grow ! */
 	}
 
 	img {
 		width: 40px;
 		height: 40px;
-	}
 
-	:global(body.dark-theme) img.dark {
-		filter: invert(100%) sepia(0%) saturate(7488%) hue-rotate(353deg) brightness(100%)
-			contrast(107%);
-	}
+		/* Grow */
 
-	/* Grow */
-
-	img {
 		vertical-align: middle;
 		-webkit-transform: perspective(1px) translateZ(0);
 		transform: perspective(1px) translateZ(0);
@@ -57,12 +53,24 @@
 		transition-duration: 0.3s;
 		-webkit-transition-property: transform;
 		transition-property: transform;
+
+		/* ! Grow ! */
 	}
 
-	button:hover > img,
-	button:focus > img,
-	button:active > img {
-		-webkit-transform: scale(1.1);
-		transform: scale(1.1);
+	:global(body.dark-theme) {
+		button {
+			&:hover {
+				background-color: $dark-background-primary-hover;
+			}
+
+			&:focus {
+				background-color: $dark-background-primary-focus;
+			}
+		}
+
+		img.dark {
+			filter: invert(100%) sepia(0%) saturate(7488%) hue-rotate(353deg) brightness(100%)
+				contrast(107%);
+		}
 	}
 </style>
