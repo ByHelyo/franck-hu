@@ -69,6 +69,7 @@
 		}
 
 		/* Fade */
+
 		&.hovered {
 			vertical-align: middle;
 			-webkit-transform: perspective(1px) translateZ(0);
@@ -80,6 +81,8 @@
 			-webkit-transition-property: color, background-color;
 			transition-property: color, background-color;
 		}
+
+		/* ! Fade ! */
 	}
 
 	:global(body.dark-theme) {
