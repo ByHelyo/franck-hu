@@ -16,8 +16,10 @@
 		color: $dark-foreground;
 	}
 
-	:global(body.dark-theme) span {
-		background-color: $light-background-primary;
-		color: $light-foreground;
+	:global(body.dark-theme) {
+		span {
+			background-color: $light-background-primary;
+			color: $light-foreground;
+		}
 	}
 </style>
