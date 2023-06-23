@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>An error has occured :,(</title>
+	<title>An error occurred :,(</title>
 </svelte:head>
 
 <main>
