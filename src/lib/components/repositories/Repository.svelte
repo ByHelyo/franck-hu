@@ -1,8 +1,6 @@
 <script lang="ts">
 	const supportedLanguages = ['c', 'rust', 'nix'];
 
-	let hovered = false;
-
 	export let name: string;
 
 	export let description: string;
@@ -18,16 +16,7 @@
 	}
 </script>
 
-<a
-	href={url}
-	class:hovered
-	on:mouseenter={() => {
-		hovered = true;
-	}}
-	on:mouseleave={() => {
-		hovered = false;
-	}}
->
+<a href={url}>
 	<div>
 		<h2>{name}</h2>
 		<p>{description}</p>
@@ -62,15 +51,9 @@
 
 		&:hover {
 			background-color: $light-background-primary-hover;
-		}
 
-		&:focus {
-			background-color: $light-background-primary-focus;
-		}
+			/* Fade */
 
-		/* Fade */
-
-		&.hovered {
 			vertical-align: middle;
 			-webkit-transform: perspective(1px) translateZ(0);
 			transform: perspective(1px) translateZ(0);
@@ -80,9 +63,13 @@
 			transition-duration: 0.3s;
 			-webkit-transition-property: color, background-color;
 			transition-property: color, background-color;
+
+			/* ! Fade ! */
 		}
 
-		/* ! Fade ! */
+		&:focus {
+			background-color: $light-background-primary-focus;
+		}
 	}
 
 	:global(body.dark-theme) {
