@@ -26,7 +26,10 @@
 		{/each}
 	</ul>
 
-	<hr transition:scale={{ duration: 750, easing: quadOut }} />
+	<hr
+		in:scale={{ duration: 750, easing: quadOut }}
+		out:scale={{ duration: 250, easing: quadOut }}
+	/>
 {/if}
 
 <style lang="scss">
