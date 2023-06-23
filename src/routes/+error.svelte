@@ -1,5 +1,5 @@
 <script>
-	import { page } from '$app/stores';
+	import Status from '$lib/components/error/Status.svelte';
 </script>
 
 <svelte:head>
@@ -7,25 +7,14 @@
 </svelte:head>
 
 <main>
-	<div class="status">{$page.status}</div>
-	<div class="status">
-		{$page.error?.message}
-	</div>
+	<Status />
 </main>
 
 <style>
 	main {
 		height: 100vh;
 		display: flex;
-		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		gap: 32px;
-	}
-
-	.status {
-		font-weight: bold;
-		font-size: 64px;
-		text-align: center;
 	}
 </style>
