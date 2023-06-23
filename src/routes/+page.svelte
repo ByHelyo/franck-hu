@@ -1,11 +1,10 @@
 <script lang="ts">
 	import Title from '$lib/components/home/Title.svelte';
 	import Links from '$lib/components/home/Links.svelte';
+	import Head from '$lib/components/head/Head.svelte';
 </script>
 
-<svelte:head>
-	<title>Franck Hu | Home</title>
-</svelte:head>
+<Head title="Franck Hu | Home" />
 
 <main>
 	<img src="me.jpg" alt="" />

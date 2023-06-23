@@ -1,12 +1,11 @@
 <script>
 	import Repositories from '$lib/components/repositories/Repositories.svelte';
+	import Head from '$lib/components/head/Head.svelte';
 
 	export let data;
 </script>
 
-<svelte:head>
-	<title>Franck Hu | Repositories</title>
-</svelte:head>
+<Head title="Franck Hu | Repositories" />
 
 <main>
 	<Repositories repos={data.repositories} />
