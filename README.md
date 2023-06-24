@@ -7,4 +7,6 @@
 ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b8940ffc-d476-42df-8827-d7ee6a6cfd03/deploy-status)](https://app.netlify.com/sites/franckhu/deploys)
+
 My personal website.
