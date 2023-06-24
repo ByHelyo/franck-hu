@@ -24,7 +24,7 @@
 
 	{#if open}
 		<ButtonImg
-			src="/misc/close.svg"
+			src="/misc/menu-open.svg"
 			on:click={() => {
 				open = !open;
 			}}
