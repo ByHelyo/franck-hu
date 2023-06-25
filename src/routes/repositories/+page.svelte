@@ -1,6 +1,7 @@
 <script>
 	import Repositories from '$lib/components/repositories/Repositories.svelte';
 	import Head from '$lib/components/head/Head.svelte';
+	import Search from '$lib/components/repositories/Search.svelte';
 
 	export let data;
 </script>
@@ -9,6 +10,8 @@
 
 <main>
 	<h1>Repositories</h1>
+
+	<Search />
 
 	<Repositories repos={data.repositories} />
 </main>
