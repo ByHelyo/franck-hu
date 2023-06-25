@@ -48,7 +48,7 @@
 		display: inline-block;
 		font-size: 24px;
 		letter-spacing: 2px;
-		border-radius: 6px;
+		border-radius: 8px;
 
 		&:hover {
 			background-color: $light-background-primary-hover;

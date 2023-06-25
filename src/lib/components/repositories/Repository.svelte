@@ -45,7 +45,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		border-radius: 6px;
+		border-radius: 8px;
 		background-color: $light-background-primary;
 		border: 2px solid $light-background-primary-border;
 

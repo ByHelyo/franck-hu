@@ -19,7 +19,7 @@
 		letter-spacing: 1px;
 		text-align: center;
 		display: block;
-		border-radius: 6px;
+		border-radius: 8px;
 		position: relative;
 
 		&:hover {

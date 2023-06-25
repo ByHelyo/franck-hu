@@ -15,7 +15,7 @@
 		padding: 10px;
 
 		background: transparent;
-		border-radius: 6px;
+		border-radius: 8px;
 		cursor: pointer;
 		border: none;
 

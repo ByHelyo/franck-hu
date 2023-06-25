@@ -10,8 +10,8 @@
 	}
 
 	span {
-		border-radius: 6px;
-		padding: 2px;
+		border-radius: 8px;
+		padding: 4px;
 		background-color: $dark-background-primary;
 		color: $dark-foreground;
 	}
