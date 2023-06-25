@@ -3,10 +3,14 @@
 	import type { Repositories } from '$lib/types/repositories/repositories';
 
 	export let repos: Repositories.Repository[];
+
+	export let search: string;
+
+	$: filtered_repos = repos.filter((repo) => repo.name.toLowerCase().includes(search));
 </script>
 
 <section>
-	{#each repos as repo}
+	{#each filtered_repos as repo}
 		<Repository
 			name={repo.name}
 			description={repo.description}
