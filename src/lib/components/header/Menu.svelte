@@ -78,10 +78,10 @@
 			&:hover {
 				background-color: $dark-background-primary-hover;
 			}
-		}
 
-		a:focus {
-			background-color: $dark-background-primary-focus;
+			&:focus {
+				background-color: $dark-background-primary-focus;
+			}
 		}
 	}
 </style>
