@@ -1,7 +1,11 @@
+<script lang="ts">
+	export let search: string;
+</script>
+
 <div class="container">
 	<div class="input-container">
 		<img src="/misc/search.svg" alt="" />
-		<input />
+		<input placeholder="Search repository" bind:value={search} />
 	</div>
 </div>
 

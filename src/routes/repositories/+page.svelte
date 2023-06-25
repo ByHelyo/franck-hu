@@ -4,6 +4,8 @@
 	import Search from '$lib/components/repositories/Search.svelte';
 
 	export let data;
+
+	let search = '';
 </script>
 
 <Head title="Franck Hu | Repositories" />
@@ -11,9 +13,9 @@
 <main>
 	<h1>Repositories</h1>
 
-	<Search />
+	<Search bind:search />
 
-	<Repositories repos={data.repositories} />
+	<Repositories repos={data.repositories} bind:search />
 </main>
 
 <style>
