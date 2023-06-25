@@ -6,23 +6,19 @@
 </script>
 
 <section>
-	<h1>Repositories</h1>
-
-	<div>
-		{#each repos as repo}
-			<Repository
-				name={repo.name}
-				description={repo.description}
-				stars={repo.stargazers_count}
-				url={repo.html_url}
-				language={repo.language}
-			/>
-		{/each}
-	</div>
+	{#each repos as repo}
+		<Repository
+			name={repo.name}
+			description={repo.description}
+			stars={repo.stargazers_count}
+			url={repo.html_url}
+			language={repo.language}
+		/>
+	{/each}
 </section>
 
 <style>
-	div {
+	section {
 		padding-inline: 16px;
 
 		display: grid;
@@ -31,12 +27,8 @@
 	}
 
 	@media (max-width: 948px) {
-		div {
+		section {
 			grid-template-columns: 1fr;
 		}
-	}
-
-	h1 {
-		text-align: center;
 	}
 </style>

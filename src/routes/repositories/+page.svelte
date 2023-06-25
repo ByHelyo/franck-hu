@@ -8,11 +8,17 @@
 <Head title="Franck Hu | Repositories" />
 
 <main>
+	<h1>Repositories</h1>
+
 	<Repositories repos={data.repositories} />
 </main>
 
 <style>
 	main {
 		padding-top: 256px;
+	}
+
+	h1 {
+		text-align: center;
 	}
 </style>
