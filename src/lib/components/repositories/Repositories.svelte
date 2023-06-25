@@ -6,7 +6,9 @@
 
 	export let search: string;
 
-	$: filtered_repos = repos.filter((repo) => repo.name.toLowerCase().includes(search));
+	$: filtered_repos = repos.filter((repo) =>
+		repo.name.toLowerCase().includes(search.toLowerCase())
+	);
 </script>
 
 <section>
