@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { fly } from 'svelte/transition';
+
 	const supportedLanguages = ['c', 'rust', 'nix'];
 
 	export let name: string;
@@ -16,7 +18,7 @@
 	}
 </script>
 
-<a href={url}>
+<a href={url} transition:fly>
 	<div>
 		<h2>{name}</h2>
 		<p>{description}</p>
