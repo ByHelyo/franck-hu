@@ -26,6 +26,6 @@
 		margin: auto;
 		display: block;
 		border: 2px solid #ffffff;
-		border-radius: 50%;
+		border-radius: 8px;
 	}
 </style>
