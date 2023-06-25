@@ -12,7 +12,7 @@
 	@import 'variables.scss';
 
 	button {
-		padding: 10px;
+		padding: 8px;
 
 		background: transparent;
 		border-radius: 8px;

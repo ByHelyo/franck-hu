@@ -14,7 +14,7 @@
 	@import 'variables.scss';
 
 	a {
-		padding: 10px;
+		padding: 8px;
 
 		letter-spacing: 1px;
 		text-align: center;
