@@ -16,6 +16,7 @@
 		display: flex;
 		justify-content: center;
 		margin-block-end: 32px;
+		padding-inline: 16px;
 	}
 
 	.input-container {
@@ -53,6 +54,12 @@
 		img {
 			filter: invert(100%) sepia(0%) saturate(7488%) hue-rotate(353deg) brightness(100%)
 				contrast(107%);
+		}
+	}
+
+	@media (max-width: 948px) {
+		.input-container {
+			width: 100%;
 		}
 	}
 </style>
