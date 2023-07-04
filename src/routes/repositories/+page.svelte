@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Repositories from '$lib/components/repositories/Repositories.svelte';
 	import Head from '$lib/components/head/Head.svelte';
 	import Search from '$lib/components/repositories/Search.svelte';

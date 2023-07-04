@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Status from '$lib/components/error/Status.svelte';
 </script>
 
