@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { theme } from '$lib/stores/theme.js';
-	import ButtonImg from '$lib/components/utils/ButtonImg.svelte';
+	import { theme } from '$lib/store/theme.js';
+	import ButtonImg from '$lib/component/utils/ButtonImg.svelte';
 
 	export let open: boolean;
 

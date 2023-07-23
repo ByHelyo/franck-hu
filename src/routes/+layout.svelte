@@ -1,8 +1,8 @@
 <script lang="ts">
 	import '/node_modules/normalize.css/normalize.css';
-	import Header from '$lib/components/header/Header.svelte';
+	import Header from '$lib/component/header/Header.svelte';
 	import '../app.scss';
-	import '$lib/styles/reset.css';
+	import '$lib/style/reset.css';
 </script>
 
 <Header />

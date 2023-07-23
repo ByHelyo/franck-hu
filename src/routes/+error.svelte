@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Status from '$lib/components/error/Status.svelte';
+	import Status from '$lib/component/error/Status.svelte';
 </script>
 
 <svelte:head>

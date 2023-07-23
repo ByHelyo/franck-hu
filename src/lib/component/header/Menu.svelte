@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { fly, scale } from 'svelte/transition';
 	import { quadOut } from 'svelte/easing';
-	import type { Header } from '$lib/types/header/Menu';
+	import type { Header } from '$lib/type/header/Menu';
 
 	export let open: boolean;
 

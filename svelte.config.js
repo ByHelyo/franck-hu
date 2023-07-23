@@ -5,7 +5,7 @@ import preprocess from 'svelte-preprocess';
 const config = {
 	preprocess: preprocess({
 		scss: {
-			includePaths: ['./src/lib/styles/']
+			includePaths: ['./src/lib/style/']
 		}
 	}),
 	kit: {

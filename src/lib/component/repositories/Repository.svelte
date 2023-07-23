@@ -14,7 +14,7 @@
 	export let language: string;
 
 	function buildLanguagePath(language: string) {
-		return `logos/${language.toLowerCase()}.svg`;
+		return `logo/${language.toLowerCase()}.svg`;
 	}
 </script>
 

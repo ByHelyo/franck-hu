@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Repository from '$lib/components/repositories/Repository.svelte';
-	import type { Repositories } from '$lib/types/repositories/repositories';
+	import Repository from '$lib/component/repositories/Repository.svelte';
+	import type { Repositories } from '$lib/type/repositories/repositories';
 
 	export let repos: Repositories.Repository[];
 

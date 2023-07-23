@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Title from '$lib/components/home/Title.svelte';
-	import Links from '$lib/components/home/Links.svelte';
-	import Head from '$lib/components/head/Head.svelte';
+	import Title from '$lib/component/home/Title.svelte';
+	import Links from '$lib/component/home/Links.svelte';
+	import Head from '$lib/component/head/Head.svelte';
 </script>
 
 <Head title="Franck Hu | Home" />

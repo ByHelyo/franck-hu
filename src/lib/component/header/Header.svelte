@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Title from '$lib/components/header/Title.svelte';
-	import Buttons from '$lib/components/header/Buttons.svelte';
-	import Menu from '$lib/components/header/Menu.svelte';
+	import Title from '$lib/component/header/Title.svelte';
+	import Buttons from '$lib/component/header/Buttons.svelte';
+	import Menu from '$lib/component/header/Menu.svelte';
 
 	let open = false;
 </script>

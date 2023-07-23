@@ -1,22 +1,22 @@
 <script lang="ts">
-	import AnchorImg from '$lib/components/utils/AnchorImg.svelte';
-	import type { Home } from '$lib/types/home/Links';
+	import AnchorImg from '$lib/component/utils/AnchorImg.svelte';
+	import type { Home } from '$lib/type/home/Links';
 
 	let links: Home.LinkSocial[] = [
 		{
 			name: 'GitHub',
 			href: 'https://github.com/ByHelyo',
-			src: 'logos/github.svg'
+			src: 'logo/github.svg'
 		},
 		{
 			name: 'Mail',
 			href: 'mailto:byfranckhu@gmail.com',
-			src: 'logos/mail.svg'
+			src: 'logo/mail.svg'
 		},
 		{
 			name: 'LinkedIn',
 			href: 'https://www.linkedin.com/in/franck-hu',
-			src: 'logos/linkedin.svg'
+			src: 'logo/linkedin.svg'
 		}
 	];
 </script>
