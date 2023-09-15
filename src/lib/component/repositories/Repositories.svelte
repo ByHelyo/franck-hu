@@ -26,6 +26,7 @@
 <style>
 	section {
 		padding-inline: 16px;
+		padding-block-end: 16px;
 
 		display: grid;
 		grid-template-columns: 1fr 1fr;
