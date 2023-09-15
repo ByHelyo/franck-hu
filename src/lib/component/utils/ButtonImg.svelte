@@ -9,7 +9,7 @@
 </button>
 
 <style lang="scss">
-	@import 'variables.scss';
+	@import 'variable.scss';
 
 	button {
 		padding: 8px;

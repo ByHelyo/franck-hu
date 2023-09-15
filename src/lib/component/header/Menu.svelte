@@ -33,7 +33,7 @@
 {/if}
 
 <style lang="scss">
-	@import 'variables.scss';
+	@import 'variable.scss';
 
 	ul {
 		padding: 0;

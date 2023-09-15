@@ -38,7 +38,7 @@
 </a>
 
 <style lang="scss">
-	@import 'variables.scss';
+	@import 'variable.scss';
 
 	a {
 		height: 180px;

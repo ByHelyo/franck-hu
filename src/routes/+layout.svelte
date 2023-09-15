@@ -10,7 +10,7 @@
 <slot />
 
 <style lang="scss">
-	@import 'variables.scss';
+	@import 'variable.scss';
 
 	:global(body.dark-theme) {
 		background-color: $dark-background;

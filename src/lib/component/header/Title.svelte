@@ -1,7 +1,7 @@
 <h1><span>Franck</span> Hu</h1>
 
 <style lang="scss">
-	@import 'variables.scss';
+	@import 'variable.scss';
 
 	h1 {
 		font-style: italic;

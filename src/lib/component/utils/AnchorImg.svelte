@@ -11,7 +11,7 @@
 </a>
 
 <style lang="scss">
-	@import 'variables.scss';
+	@import 'variable.scss';
 
 	a {
 		padding: 8px;

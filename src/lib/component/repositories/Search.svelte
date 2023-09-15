@@ -10,7 +10,7 @@
 </div>
 
 <style lang="scss">
-	@import 'variables.scss';
+	@import 'variable.scss';
 
 	.container {
 		display: flex;
