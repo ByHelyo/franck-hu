@@ -10,7 +10,7 @@
 		},
 		{
 			name: 'Mail',
-			href: 'mailto:byfranckhu@gmail.com',
+			href: 'mailto:byfranckhu@outlook.com',
 			src: 'logo/mail.svg'
 		},
 		{
