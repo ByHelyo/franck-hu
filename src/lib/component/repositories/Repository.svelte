@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { fly } from 'svelte/transition';
 
-	const supportedLanguages = ['c', 'rust', 'nix'];
+	const supportedLanguages = ['c', 'rust', 'nix', 'svelte', 'typescript'];
 
 	export let name: string;
 
