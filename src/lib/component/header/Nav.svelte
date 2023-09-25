@@ -1,13 +1,13 @@
 <script lang="ts">
 	import { theme } from '$lib/store/theme.js';
 	import Button from '$lib/component/header/Button.svelte';
-	import type { Header } from '$lib/type/header/Menu';
 	import Menu from '$lib/component/header/Menu.svelte';
 	import Link from '$lib/component/header/Link.svelte';
+	import type { LinkInfo } from '$lib/type/header/menu';
 
 	let open = false;
 
-	let links: Header.LinkNavigation[] = [
+	let links: LinkInfo[] = [
 		{
 			name: 'Home',
 			href: '/'

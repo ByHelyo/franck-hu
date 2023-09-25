@@ -1,18 +1,12 @@
 <script lang="ts">
 	import Repository from '$lib/component/repositories/Repository.svelte';
-	import type { Repositories } from '$lib/type/repositories/repositories';
+	import type { RepositoryInfo } from '$lib/type/repositories/repositories';
 
-	export let repos: Repositories.Repository[];
-
-	export let search: string;
-
-	$: filtered_repos = repos.filter((repo) =>
-		repo.name.toLowerCase().includes(search.toLowerCase())
-	);
+	export let repos: RepositoryInfo[];
 </script>
 
 <section>
-	{#each filtered_repos as repo}
+	{#each repos as repo}
 		<Repository
 			name={repo.name}
 			description={repo.description}

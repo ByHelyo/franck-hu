@@ -24,7 +24,7 @@
 		<p>{description}</p>
 	</div>
 
-	<div class="details">
+	<div class="container">
 		<p>
 			<img src="misc/star.svg" alt="" />{stars}
 		</p>
@@ -88,7 +88,7 @@
 		position: relative;
 	}
 
-	div.details {
+	.container {
 		display: flex;
 		gap: 32px;
 	}

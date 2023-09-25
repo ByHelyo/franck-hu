@@ -1,11 +1,11 @@
 <script lang="ts">
 	import { fly, scale } from 'svelte/transition';
 	import { quadOut } from 'svelte/easing';
-	import type { Header } from '$lib/type/header/Menu';
+	import type { LinkInfo } from '$lib/type/header/menu';
 
 	export let open: boolean;
 
-	export let links: Header.LinkNavigation[];
+	export let links: LinkInfo[];
 </script>
 
 {#if open}
