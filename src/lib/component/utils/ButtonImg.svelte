@@ -15,7 +15,7 @@
 		padding: 8px;
 
 		background: transparent;
-		border-radius: 8px;
+		border-radius: 6px;
 		cursor: pointer;
 		border: none;
 
@@ -23,14 +23,9 @@
 			background-color: $light-background-primary-hover;
 		}
 
-		&:focus {
-			background-color: $light-background-primary-focus;
-		}
-
 		/* Grow */
 
 		&:hover > img,
-		&:focus > img,
 		&:active > img {
 			-webkit-transform: scale(1.1);
 			transform: scale(1.1);
@@ -40,8 +35,8 @@
 	}
 
 	img {
-		width: 40px;
-		height: 40px;
+		width: 32px;
+		height: 32px;
 
 		/* Grow */
 
@@ -61,10 +56,6 @@
 		button {
 			&:hover {
 				background-color: $dark-background-primary-hover;
-			}
-
-			&:focus {
-				background-color: $dark-background-primary-focus;
 			}
 		}
 
