@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { theme } from '$lib/store/theme.js';
-	import ButtonImg from '$lib/component/utils/ButtonImg.svelte';
+	import Button from '$lib/component/header/Button.svelte';
 	import type { Header } from '$lib/type/header/Menu';
 	import Menu from '$lib/component/header/Menu.svelte';
 
@@ -34,21 +34,21 @@
 	{/each}
 
 	{#if $theme === 'light'}
-		<ButtonImg src="misc/sun.svg" on:click={handleThemeButton} />
+		<Button src="misc/sun.svg" on:click={handleThemeButton} />
 	{:else if $theme === 'dark'}
-		<ButtonImg src="misc/moon.svg" on:click={handleThemeButton} />
+		<Button src="misc/moon.svg" on:click={handleThemeButton} />
 	{/if}
 
 	<div class="mobile-menu" on:close={() => (open = false)}>
 		{#if open}
-			<ButtonImg
+			<Button
 				src="/misc/menu-open.svg"
 				on:click={() => {
 					open = !open;
 				}}
 			/>
 		{:else}
-			<ButtonImg
+			<Button
 				src="/misc/menu.svg"
 				on:click={() => {
 					open = !open;
