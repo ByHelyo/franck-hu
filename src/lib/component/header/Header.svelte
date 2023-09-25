@@ -7,29 +7,28 @@
 </script>
 
 <header>
-	<nav>
-		<div>
-			<Title />
+	<div>
+		<Title />
 
-			<Buttons bind:open />
-		</div>
+		<Buttons bind:open />
+	</div>
 
-		<Menu bind:open />
-	</nav>
+	<Menu bind:open />
 </header>
 
 <style>
 	header {
-		height: 200px;
-		width: 1400px;
+		height: 60px;
+		font-size: 18px;
+		padding-inline: 16px;
+		max-width: 1200px;
 		margin-inline: auto;
 		display: flex;
-		align-items: center;
 	}
 
 	div {
+		width: 100%;
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
 	}
 </style>
