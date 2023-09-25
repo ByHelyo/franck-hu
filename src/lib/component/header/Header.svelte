@@ -14,9 +14,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		max-width: 1200px;
 		height: 64px;
-		margin-inline: auto;
 		padding-inline: 16px;
 		font-size: 18px;
 	}
