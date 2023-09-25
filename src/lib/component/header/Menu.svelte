@@ -9,7 +9,7 @@
 </script>
 
 {#if open}
-	<div>
+	<div class="container">
 		<ul>
 			{#each links as link, i}
 				<li transition:fly={{ y: -15, delay: 50 * i }}>
@@ -28,7 +28,7 @@
 <style lang="scss">
 	@import 'variable.scss';
 
-	div {
+	.container {
 		position: absolute;
 		top: 64px;
 		left: 0;

@@ -52,16 +52,16 @@
 		border-radius: 50%;
 	}
 
-	h1 {
-		padding-top: 32px;
-		font-size: 48px;
-		margin: 0;
-	}
-
 	.details {
 		display: flex;
 		gap: 16px;
 		flex-direction: column;
+	}
+
+	h1 {
+		padding-top: 32px;
+		font-size: 48px;
+		margin: 0;
 	}
 
 	.description {
