@@ -3,6 +3,7 @@
 	import Button from '$lib/component/header/Button.svelte';
 	import type { Header } from '$lib/type/header/Menu';
 	import Menu from '$lib/component/header/Menu.svelte';
+	import Link from '$lib/component/header/Link.svelte';
 
 	let open = false;
 
@@ -30,7 +31,7 @@
 
 <nav>
 	{#each links as link}
-		<a href={link.href}>{link.name}</a>
+		<Link href={link.href} content={link.name} />
 	{/each}
 
 	{#if $theme === 'light'}
@@ -68,35 +69,13 @@
 		gap: 6px;
 	}
 
-	a {
-		display: inline-block;
-		padding: 11.55px;
-		border-radius: 4px;
-
-		&:hover {
-			background: $light-background-primary-hover;
-		}
-	}
-
 	.mobile-menu {
 		display: none;
-	}
-
-	:global(body.dark-theme) {
-		a {
-			&:hover {
-				background: $dark-background-primary-hover;
-			}
-		}
 	}
 
 	@media (max-width: 640px) {
 		.mobile-menu {
 			display: block;
-		}
-
-		a {
-			display: none;
 		}
 	}
 </style>
