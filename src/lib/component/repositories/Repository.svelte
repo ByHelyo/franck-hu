@@ -47,9 +47,8 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		border-radius: 8px;
-		background-color: $light-background-primary;
-		border: 2px solid $light-background-primary-border;
+		border-radius: 4px;
+		border: 1px solid $light-background-primary-border;
 
 		&:hover {
 			background-color: $light-background-primary-hover;
@@ -68,23 +67,14 @@
 
 			/* ! Fade ! */
 		}
-
-		&:focus {
-			background-color: $light-background-primary-focus;
-		}
 	}
 
 	:global(body.dark-theme) {
 		a {
-			background-color: $dark-background-primary;
 			border-color: $dark-background-primary-border;
 
 			&:hover {
 				background-color: $dark-background-primary-hover;
-			}
-
-			&:focus {
-				background-color: $dark-background-primary-focus;
 			}
 		}
 	}

@@ -25,8 +25,7 @@
 		width: 50%;
 		padding: 16px 8px;
 		border-radius: 8px;
-		background: $light-background-primary;
-		border: 2px solid $light-background-primary-border;
+		border: 1px solid $light-background-primary-border;
 	}
 
 	input {
@@ -43,7 +42,7 @@
 
 	:global(body.dark-theme) {
 		.input-container {
-			background: $dark-background-primary;
+			background: $dark-background;
 			border-color: $dark-background-primary-border;
 		}
 
