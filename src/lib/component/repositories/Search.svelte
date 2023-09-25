@@ -23,8 +23,8 @@
 		display: flex;
 		gap: 8px;
 		width: 50%;
-		padding: 16px 8px;
-		border-radius: 8px;
+		padding: 10px 6px;
+		border-radius: 4px;
 		border: 1px solid $light-background-primary-border;
 	}
 
@@ -32,7 +32,6 @@
 		background: none;
 		border: none;
 		width: 100%;
-		font-size: 24px;
 		letter-spacing: 2px;
 
 		&:focus {
