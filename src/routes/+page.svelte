@@ -16,7 +16,7 @@
 
 <style>
 	main {
-		padding-top: 320px;
+		padding-top: 256px;
 	}
 
 	img {
