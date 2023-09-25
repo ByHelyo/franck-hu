@@ -5,35 +5,35 @@
 
 	export let open: boolean;
 
-	let links: Header.LinkNavigation[] = [
-		{
-			name: 'Home',
-			href: '/'
-		},
-		{
-			name: 'Repositories',
-			href: '/repositories'
-		}
-	];
+	export let links: Header.LinkNavigation[];
 </script>
 
 {#if open}
-	<ul>
-		{#each links as link, i}
-			<li transition:fly={{ y: -15, delay: 50 * i }}>
-				<a href={link.href} on:click={() => (open = !open)}>{link.name}</a>
-			</li>
-		{/each}
-	</ul>
+	<div>
+		<ul>
+			{#each links as link, i}
+				<li transition:fly={{ y: -15, delay: 50 * i }}>
+					<a href={link.href} on:click={() => (open = !open)}>{link.name}</a>
+				</li>
+			{/each}
+		</ul>
 
-	<hr
-		in:scale={{ duration: 750, easing: quadOut }}
-		out:scale={{ duration: 250, easing: quadOut }}
-	/>
+		<hr
+			in:scale={{ duration: 750, easing: quadOut }}
+			out:scale={{ duration: 250, easing: quadOut }}
+		/>
+	</div>
 {/if}
 
 <style lang="scss">
 	@import 'variable.scss';
+
+	div {
+		position: absolute;
+		top: 64px;
+		left: 0;
+		right: 0;
+	}
 
 	ul {
 		padding: 0;
@@ -46,16 +46,11 @@
 		padding: 16px;
 
 		display: inline-block;
-		font-size: 24px;
 		letter-spacing: 2px;
 		border-radius: 8px;
 
 		&:hover {
 			background-color: $light-background-primary-hover;
-		}
-
-		&:focus {
-			background-color: $light-background-primary-focus;
 		}
 
 		/* Fade */
@@ -77,10 +72,6 @@
 		a {
 			&:hover {
 				background-color: $dark-background-primary-hover;
-			}
-
-			&:focus {
-				background-color: $dark-background-primary-focus;
 			}
 		}
 	}
