@@ -22,34 +22,11 @@
 		&:hover {
 			background-color: $light-background-primary-hover;
 		}
-
-		/* Grow */
-
-		&:hover > img,
-		&:active > img {
-			-webkit-transform: scale(1.1);
-			transform: scale(1.1);
-		}
-
-		/* ! Grow ! */
 	}
 
 	img {
-		width: 32px;
-		height: 32px;
-
-		/* Grow */
-
-		vertical-align: middle;
-		-webkit-transform: perspective(1px) translateZ(0);
-		transform: perspective(1px) translateZ(0);
-		box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-		-webkit-transition-duration: 0.3s;
-		transition-duration: 0.3s;
-		-webkit-transition-property: transform;
-		transition-property: transform;
-
-		/* ! Grow ! */
+		width: 24px;
+		height: 24px;
 	}
 
 	:global(body.dark-theme) {
