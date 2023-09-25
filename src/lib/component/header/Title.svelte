@@ -1,16 +1,27 @@
-<h1><span>Franck</span> Hu</h1>
+<a href="/">
+	<img src="/favicon.png" alt="logo" />
+	<span class="firstName">Franck</span> Hu
+</a>
 
 <style lang="scss">
 	@import 'variable.scss';
 
-	h1 {
+	a {
 		font-style: italic;
-		margin: 0;
 		font-family: Raleway, monospace;
+		display: flex;
+		align-items: center;
+		gap: 6px;
 	}
 
-	span {
-		border-radius: 8px;
+	img {
+		width: 24px;
+		height: 24px;
+		border-radius: 4px;
+	}
+
+	.firstName {
+		border-radius: 4px;
 		padding: 4px;
 		background-color: $dark-background-primary;
 		color: $dark-foreground;
