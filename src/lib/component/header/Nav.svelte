@@ -3,17 +3,17 @@
 	import Button from '$lib/component/header/Button.svelte';
 	import Menu from '$lib/component/header/Menu.svelte';
 	import Link from '$lib/component/header/Link.svelte';
-	import type { LinkInfo } from '$lib/type/header/menu';
+	import type { AnchorInfo } from '$lib/type/misc/misc';
 
 	let open = false;
 
-	let links: LinkInfo[] = [
+	let anchors: AnchorInfo[] = [
 		{
-			name: 'Home',
+			content: 'Home',
 			href: '/'
 		},
 		{
-			name: 'Repositories',
+			content: 'Repositories',
 			href: '/repositories'
 		}
 	];
@@ -30,8 +30,8 @@
 </script>
 
 <nav>
-	{#each links as link}
-		<Link href={link.href} content={link.name} />
+	{#each anchors as anchor}
+		<Link href={anchor.href} content={anchor.content} />
 	{/each}
 
 	{#if $theme === 'light'}
@@ -57,7 +57,7 @@
 			/>
 		{/if}
 
-		<Menu {links} bind:open />
+		<Menu {anchors} bind:open />
 	</div>
 </nav>
 

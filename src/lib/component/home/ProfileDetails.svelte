@@ -40,7 +40,7 @@
 	}
 
 	h1 {
-		padding-top: 32px;
+		padding-top: 64px;
 		font-size: 48px;
 		margin: 0;
 	}
