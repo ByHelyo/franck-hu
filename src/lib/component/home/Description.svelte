@@ -91,8 +91,7 @@
 <div class="container">
 	<h2>About me</h2>
 	<p>
-		My name is Franck and I'm a computer science student from France. Here's some info about me! My
-		name is Franck and I'm a computer science student from France. Here's some info about me!
+		My name is Franck and I'm a computer science student from France. Here's some info about me!
 	</p>
 	<p />
 	<h2>Languages</h2>
