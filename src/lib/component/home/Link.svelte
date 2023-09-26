@@ -44,10 +44,4 @@
 				contrast(107%);
 		}
 	}
-
-	@media (max-width: 640px) {
-		a {
-			padding: 16px 24px;
-		}
-	}
 </style>

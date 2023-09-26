@@ -58,9 +58,5 @@
 		.container {
 			align-items: center;
 		}
-
-		.actions {
-			flex-direction: column;
-		}
 	}
 </style>
