@@ -59,4 +59,10 @@
 			align-items: center;
 		}
 	}
+
+	@media (max-width: 480px) {
+		.actions {
+			flex-direction: column;
+		}
+	}
 </style>

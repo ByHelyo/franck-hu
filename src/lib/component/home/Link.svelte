@@ -13,6 +13,7 @@
 
 	a {
 		display: flex;
+		justify-content: center;
 		gap: 8px;
 		border-radius: 4px;
 		padding: 8px 16px;
@@ -42,6 +43,12 @@
 		img {
 			filter: invert(100%) sepia(0%) saturate(7488%) hue-rotate(353deg) brightness(100%)
 				contrast(107%);
+		}
+	}
+
+	@media (max-width: 480px) {
+		a {
+			padding: 16px 32px;
 		}
 	}
 </style>
