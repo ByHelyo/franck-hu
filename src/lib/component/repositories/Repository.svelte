@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { fly } from 'svelte/transition';
-
-	const supportedLanguages = ['c', 'rust', 'nix', 'svelte', 'typescript'];
+	import { languageIcons } from '$lib/const/language';
 
 	export let name: string;
 
@@ -21,7 +20,11 @@
 <a href={url} transition:fly>
 	<div>
 		<h3>{name}</h3>
-		<p>{description}</p>
+		<p>
+			{#if description}
+				{description}
+			{/if}
+		</p>
 	</div>
 
 	<div class="container">
@@ -29,9 +32,9 @@
 			<img src="misc/star.svg" alt="" />{stars}
 		</p>
 
-		{#if language != null && supportedLanguages.includes(language.toLowerCase())}
+		{#if language != null && languageIcons.includes(language.toLowerCase())}
 			<p>
-				<img src={buildLanguagePath(language)} alt="" />{language}
+				<img src={buildLanguagePath(language)} alt={language} />{language}
 			</p>
 		{/if}
 	</div>
