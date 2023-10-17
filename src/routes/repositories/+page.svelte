@@ -17,7 +17,7 @@
 
 <Head title="Franck Hu | Repositories" />
 
-<main>
+<div class="container">
 	<h1>
 		{filtered_repos.length}
 		{#if filtered_repos.length <= 1}repository{:else}repositories{/if}
@@ -26,10 +26,10 @@
 	<Search bind:search />
 
 	<Repositories repos={filtered_repos} />
-</main>
+</div>
 
 <style>
-	main {
+	.container {
 		padding-top: 256px;
 	}
 

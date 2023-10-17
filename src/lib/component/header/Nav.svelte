@@ -3,20 +3,9 @@
 	import Button from '$lib/component/header/Button.svelte';
 	import Menu from '$lib/component/header/Menu.svelte';
 	import Link from '$lib/component/header/Link.svelte';
-	import type { AnchorInfo } from '$lib/type/misc/misc';
+	import { headerLinks } from '$lib/const/link';
 
 	let open = false;
-
-	let anchors: AnchorInfo[] = [
-		{
-			content: 'Home',
-			href: '/'
-		},
-		{
-			content: 'Repositories',
-			href: '/repositories'
-		}
-	];
 
 	function handleThemeButton() {
 		if ($theme === 'light') {
@@ -30,7 +19,7 @@
 </script>
 
 <nav>
-	{#each anchors as anchor}
+	{#each headerLinks as anchor}
 		<Link href={anchor.href} content={anchor.content} />
 	{/each}
 
@@ -57,7 +46,7 @@
 			/>
 		{/if}
 
-		<Menu {anchors} bind:open />
+		<Menu bind:open />
 	</div>
 </nav>
 

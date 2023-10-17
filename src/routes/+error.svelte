@@ -6,12 +6,12 @@
 	<title>An error occurred :,(</title>
 </svelte:head>
 
-<main>
+<div class="container">
 	<Status />
-</main>
+</div>
 
 <style>
-	main {
+	.container {
 		height: 100vh;
 		display: flex;
 		justify-content: center;

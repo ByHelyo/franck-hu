@@ -1,17 +1,15 @@
 <script lang="ts">
 	import { fly, scale } from 'svelte/transition';
 	import { quadOut } from 'svelte/easing';
-	import type { AnchorInfo } from '$lib/type/misc/misc';
+	import { headerLinks } from '$lib/const/link';
 
 	export let open: boolean;
-
-	export let anchors: AnchorInfo[];
 </script>
 
 {#if open}
 	<div class="container">
 		<ul>
-			{#each anchors as anchor, i}
+			{#each headerLinks as anchor, i}
 				<li transition:fly={{ y: -15, delay: 50 * i }}>
 					<a href={anchor.href} on:click={() => (open = !open)}>{anchor.content}</a>
 				</li>

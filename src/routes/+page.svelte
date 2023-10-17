@@ -6,14 +6,14 @@
 
 <Head title="Franck Hu | Home" />
 
-<main>
+<div class="container">
 	<Profile />
 
 	<Description />
-</main>
+</div>
 
 <style>
-	main {
+	.container {
 		max-width: 1400px;
 		margin: auto;
 		display: flex;
@@ -22,13 +22,13 @@
 	}
 
 	@media (max-width: 1536px) {
-		main {
+		.container {
 			flex-direction: column;
 		}
 	}
 
 	@media (max-width: 640px) {
-		main {
+		.container {
 			justify-content: center;
 			align-items: center;
 		}
