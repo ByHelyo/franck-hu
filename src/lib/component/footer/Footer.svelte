@@ -1,4 +1,4 @@
-<div class="container">Made with love by Franck Hu</div>
+<div class="container">Made with ❤️ by Franck Hu</div>
 
 <style>
 	.container {

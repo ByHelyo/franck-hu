@@ -1,6 +1,5 @@
 <script lang="ts">
-	import { technologyBadges } from '$lib/const/technology';
-	import { languageBadges } from '$lib/const/language';
+	import { languageBadges, osBadges, technologyBadges } from '$lib/const/badge';
 </script>
 
 <div class="container">
@@ -18,6 +17,12 @@
 	<h2>Technologies</h2>
 	<div class="badges">
 		{#each technologyBadges as badge}
+			<img alt={badge.alt} src={badge.src} />
+		{/each}
+	</div>
+	<h2>OS</h2>
+	<div class="badges">
+		{#each osBadges as badge}
 			<img alt={badge.alt} src={badge.src} />
 		{/each}
 	</div>

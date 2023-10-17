@@ -1,10 +1,9 @@
 <script lang="ts">
 	import Status from '$lib/component/error/Status.svelte';
+	import Head from '$lib/component/head/Head.svelte';
 </script>
 
-<svelte:head>
-	<title>An error occurred :,(</title>
-</svelte:head>
+<Head title="An error occured :,(" />
 
 <div class="container">
 	<Status />

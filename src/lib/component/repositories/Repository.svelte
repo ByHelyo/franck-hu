@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { fly } from 'svelte/transition';
-	import { languageIcons } from '$lib/const/language';
+	import { languageIcons } from '$lib/const/icon';
 
 	export let name: string;
 
