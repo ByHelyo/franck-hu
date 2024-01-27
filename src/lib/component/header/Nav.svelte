@@ -10,10 +10,10 @@
 	function handleThemeButton() {
 		if ($theme === 'light') {
 			$theme = 'dark';
-			window.document.body.classList.toggle('dark-theme');
+			document.documentElement.classList.toggle('dark');
 		} else {
 			$theme = 'light';
-			window.document.body.classList.toggle('dark-theme');
+			document.documentElement.classList.toggle('dark');
 		}
 	}
 </script>

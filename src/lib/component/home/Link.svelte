@@ -31,7 +31,7 @@
 		top: 1px;
 	}
 
-	:global(body.dark-theme) {
+	:global(html.dark) {
 		a {
 			border-color: $dark-background-primary-border;
 

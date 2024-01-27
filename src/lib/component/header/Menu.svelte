@@ -66,7 +66,7 @@
 		/* ! Fade ! */
 	}
 
-	:global(body.dark-theme) {
+	:global(html.dark) {
 		a {
 			&:hover {
 				background-color: $dark-background-primary-hover;

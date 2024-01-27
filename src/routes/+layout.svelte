@@ -4,7 +4,10 @@
 	import '../app.scss';
 	import '$lib/style/reset.css';
 	import Footer from '$lib/component/footer/Footer.svelte';
+	import Theme from '$lib/component/misc/Theme.svelte';
 </script>
+
+<Theme />
 
 <Header />
 
@@ -21,7 +24,7 @@
 		min-height: calc(100vh - 128px);
 	}
 
-	:global(body.dark-theme) {
+	:global(html.dark) {
 		background-color: $dark-background;
 		color: $dark-foreground;
 	}

@@ -29,7 +29,7 @@
 		height: 24px;
 	}
 
-	:global(body.dark-theme) {
+	:global(html.dark) {
 		button {
 			&:hover {
 				background-color: $dark-background-primary-hover;

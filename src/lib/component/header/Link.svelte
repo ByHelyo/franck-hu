@@ -18,7 +18,7 @@
 		}
 	}
 
-	:global(body.dark-theme) {
+	:global(html.dark) {
 		a {
 			&:hover {
 				background: $dark-background-primary-hover;

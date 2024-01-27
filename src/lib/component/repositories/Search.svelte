@@ -39,7 +39,7 @@
 		}
 	}
 
-	:global(body.dark-theme) {
+	:global(html.dark) {
 		.input-container {
 			background: $dark-background;
 			border-color: $dark-background-primary-border;

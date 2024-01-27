@@ -27,7 +27,7 @@
 		color: $dark-foreground;
 	}
 
-	:global(body.dark-theme) {
+	:global(html.dark) {
 		span {
 			background-color: $light-background-primary;
 			color: $light-foreground;
