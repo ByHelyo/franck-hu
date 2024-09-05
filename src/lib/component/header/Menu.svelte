@@ -47,10 +47,6 @@
 		letter-spacing: 2px;
 		border-radius: 8px;
 
-		&:hover {
-			background-color: $light-background-primary-hover;
-		}
-
 		/* Fade */
 
 		vertical-align: middle;
@@ -64,6 +60,10 @@
 		transition-property: color, background-color;
 
 		/* ! Fade ! */
+
+		&:hover {
+			background-color: $light-background-primary-hover;
+		}
 	}
 
 	:global(html.dark) {
