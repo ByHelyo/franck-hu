@@ -9,7 +9,7 @@
 <a {href}><img {src} alt="" />{name}</a>
 
 <style lang="scss">
-	@import 'variable.scss';
+	@use 'variable.scss' as v;
 
 	a {
 		display: flex;
@@ -17,10 +17,10 @@
 		gap: 8px;
 		border-radius: 4px;
 		padding: 8px 16px;
-		border: 1px solid $light-background-primary-border;
+		border: 1px solid v.$light-background-primary-border;
 
 		&:hover {
-			background-color: $light-background-primary-hover;
+			background-color: v.$light-background-primary-hover;
 		}
 	}
 
@@ -33,10 +33,10 @@
 
 	:global(html.dark) {
 		a {
-			border-color: $dark-background-primary-border;
+			border-color: v.$dark-background-primary-border;
 
 			&:hover {
-				background-color: $dark-background-primary-hover;
+				background-color: v.$dark-background-primary-hover;
 			}
 		}
 

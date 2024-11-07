@@ -4,7 +4,7 @@ import type { AnchorInfo } from '$lib/type/misc/misc';
 export const links: SocialInfo[] = [
 	{
 		name: 'Mail',
-		href: 'mailto:byfranckhu@outlook.com',
+		href: 'mailto:byhelyo@gmail.com',
 		src: 'logo/mail.svg'
 	},
 	{

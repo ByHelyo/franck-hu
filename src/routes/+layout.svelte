@@ -18,14 +18,14 @@
 <Footer />
 
 <style lang="scss">
-	@import 'variable.scss';
+	@use 'variable.scss' as v;
 
 	main {
 		min-height: calc(100vh - 128px);
 	}
 
 	:global(html.dark) {
-		background-color: $dark-background;
-		color: $dark-foreground;
+		background-color: v.$dark-background;
+		color: v.$dark-foreground;
 	}
 </style>

@@ -9,7 +9,7 @@
 </button>
 
 <style lang="scss">
-	@import 'variable.scss';
+	@use 'variable.scss' as v;
 
 	button {
 		padding: 8px;
@@ -20,7 +20,7 @@
 		border: none;
 
 		&:hover {
-			background-color: $light-background-primary-hover;
+			background-color: v.$light-background-primary-hover;
 		}
 	}
 
@@ -32,7 +32,7 @@
 	:global(html.dark) {
 		button {
 			&:hover {
-				background-color: $dark-background-primary-hover;
+				background-color: v.$dark-background-primary-hover;
 			}
 		}
 

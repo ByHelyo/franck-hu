@@ -10,7 +10,7 @@
 </div>
 
 <style lang="scss">
-	@import 'variable.scss';
+	@use 'variable.scss' as v;
 
 	.container {
 		display: flex;
@@ -25,7 +25,7 @@
 		width: 50%;
 		padding: 10px 6px;
 		border-radius: 4px;
-		border: 1px solid $light-background-primary-border;
+		border: 1px solid v.$light-background-primary-border;
 	}
 
 	input {
@@ -41,12 +41,12 @@
 
 	:global(html.dark) {
 		.input-container {
-			background: $dark-background;
-			border-color: $dark-background-primary-border;
+			background: v.$dark-background;
+			border-color: v.$dark-background-primary-border;
 		}
 
 		input {
-			color: $dark-foreground;
+			color: v.$dark-foreground;
 		}
 
 		img {

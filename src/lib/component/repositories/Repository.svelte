@@ -41,7 +41,7 @@
 </a>
 
 <style lang="scss">
-	@import 'variable.scss';
+	@use 'variable.scss' as v;
 
 	a {
 		height: 180px;
@@ -51,10 +51,10 @@
 		flex-direction: column;
 		justify-content: space-between;
 		border-radius: 4px;
-		border: 1px solid $light-background-primary-border;
+		border: 1px solid v.$light-background-primary-border;
 
 		&:hover {
-			background-color: $light-background-primary-hover;
+			background-color: v.$light-background-primary-hover;
 
 			/* Fade */
 
@@ -74,10 +74,10 @@
 
 	:global(html.dark) {
 		a {
-			border-color: $dark-background-primary-border;
+			border-color: v.$dark-background-primary-border;
 
 			&:hover {
-				background-color: $dark-background-primary-hover;
+				background-color: v.$dark-background-primary-hover;
 			}
 		}
 	}

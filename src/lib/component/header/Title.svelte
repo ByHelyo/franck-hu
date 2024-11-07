@@ -4,7 +4,7 @@
 </a>
 
 <style lang="scss">
-	@import 'variable.scss';
+	@use 'variable.scss' as v;
 
 	a {
 		font-style: italic;
@@ -23,14 +23,14 @@
 	.firstName {
 		border-radius: 4px;
 		padding: 4px;
-		background-color: $dark-background-primary;
-		color: $dark-foreground;
+		background-color: v.$dark-background-primary;
+		color: v.$dark-foreground;
 	}
 
 	:global(html.dark) {
 		span {
-			background-color: $light-background-primary;
-			color: $light-foreground;
+			background-color: v.$light-background-primary;
+			color: v.$light-foreground;
 		}
 	}
 </style>

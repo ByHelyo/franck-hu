@@ -6,7 +6,7 @@
 <a {href}>{content}</a>
 
 <style lang="scss">
-	@import 'variable.scss';
+	@use 'variable.scss' as v;
 
 	a {
 		display: inline-block;
@@ -14,14 +14,14 @@
 		border-radius: 4px;
 
 		&:hover {
-			background: $light-background-primary-hover;
+			background: v.$light-background-primary-hover;
 		}
 	}
 
 	:global(html.dark) {
 		a {
 			&:hover {
-				background: $dark-background-primary-hover;
+				background: v.$dark-background-primary-hover;
 			}
 		}
 	}

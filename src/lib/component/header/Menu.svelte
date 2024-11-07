@@ -24,7 +24,7 @@
 {/if}
 
 <style lang="scss">
-	@import 'variable.scss';
+	@use 'variable.scss' as v;
 
 	.container {
 		position: absolute;
@@ -62,14 +62,14 @@
 		/* ! Fade ! */
 
 		&:hover {
-			background-color: $light-background-primary-hover;
+			background-color: v.$light-background-primary-hover;
 		}
 	}
 
 	:global(html.dark) {
 		a {
 			&:hover {
-				background-color: $dark-background-primary-hover;
+				background-color: v.$dark-background-primary-hover;
 			}
 		}
 	}

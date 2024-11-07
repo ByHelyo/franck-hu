@@ -50,9 +50,7 @@
 	</div>
 </nav>
 
-<style lang="scss">
-	@import 'variable.scss';
-
+<style>
 	nav {
 		display: flex;
 		gap: 6px;
