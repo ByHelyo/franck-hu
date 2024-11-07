@@ -7,7 +7,6 @@
 	<p>
 		My name is Franck and I'm a computer science student from France. Here's some info about me!
 	</p>
-	<p />
 	<h2>Languages</h2>
 	<div class="badges">
 		{#each languageBadges as badge}
